@@ -1,0 +1,56 @@
+name: tots_test
+description: "A new Flutter project."
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  bloc: ^8.1.4
+  dio: ^5.7.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.6
+  flutter_image_compress: ^2.3.0
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_image: ^0.0.6+1
+  flutter_native_splash: ^2.4.2
+  image_picker: ^1.1.2
+  path_provider: ^2.1.5
+  permission_handler: ^11.3.1
+  pull_to_refresh_flutter3: ^2.0.2
+  shared_preferences: ^2.3.2
+  shimmer: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+# dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/minimal_white.jpeg"
+  min_sdk_android: 23 # android min sdk min:16, default 21
+
+# dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#E4F353"
+  image: assets/images/minimal_white.jpeg
+
+  android_12:
+    image: assets/images/minimal_white.jpeg
+    icon_background_color: "#E4F353"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
